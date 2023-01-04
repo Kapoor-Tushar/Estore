@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>e-store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+    <header class="header">
+      <nav class="nav">
+        <img src="Resources/img-logo.png" class="brand_logo" />
+        <span class="heading">Estore</span>
+        <div class="nav_link">
+          <div class="link_items search">
+            <form action="Link_To_action_page" method="get">
+              <input
+                type="text"
+                name="search_box"
+                class="search_box"
+                placeholder="Search"
+              />
+              <button>
+                <input
+                  type="image"
+                  src="Resources/search-icon.png"
+                  height="20"
+                  width="20"
+                />
+              </button>
+            </form>
+          </div>
+          <div class="link_items account_login-container login_button">
+            <img src="Resources/account-login.png" class="account_login " />
+            <div class="account_login-heading ">Login</div>
+            <div class="modal hidden">
+              
+              <h1 class ="modal-heading">Login</h1>
+              <p class="modal-discription">
+                <form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" >  
+                Name: <input type="text" name="name" class="name_inp"><br/>  
+                Password: <input type="password" name="password" class="pass_inp"><br/>  
+                <input type="submit" value="Sign In" class="btn_sign-in"> </p>
+                <div class="submit_info"></div>
+            </div>
+          </div>
+          <div class="link_items customer_care-container">
+            <img src="Resources/customer-care.png" class="customer_care" />
+            <div class="customer_care-heading">Customer care</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="option_class">
+      <div class="fashion_container">
+        <div>
+          <img src="Resources/fashion-icon.jpg" class="fashion-icon" />
+          <div class="fashion-icon-heading">Fashion</div>
+        </div>
+        <div class="dropdown-content">
+          <div class="header">
+            <h2>Fashion</h2>
+          </div>
+          <div class="row">
+            <div class="column">
+              <h3>Mens</h3>
+              <a href="#">Clothing</a>
+              <a href="#">Footwear</a>
+              <a href="#">Assesories</a>
+            </div>
+            <div class="column">
+              <h3>Womens</h3>
+              <a href="#">Clothing</a>
+              <a href="#">Footwear</a>
+              <a href="#">Assesories</a>
+            </div>
+            <div class="column">
+              <h3>Children</h3>
+              <a href="#">Clothing</a>
+              <a href="#">Footwear</a>
+              <a href="#">Assesories</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="electronics_container">
+        <div>
+          <img src="Resources/electronics-icon.jpg" class="electronics-icon" />
+          <div class="electronics-icon-heading">Electronics</div>
+        </div>
+        <div class="dropdown-content">
+          <div class="header">
+            <h2>Electronics</h2>
+          </div>
+          <div class="row">
+            <div class="column">
+              <h3>Laptops</h3>
+              <a href="#">Gaming</a>
+              <a href="#">Office</a>
+              <a href="#">Assesories</a>
+            </div>
+            <div class="column">
+              <h3>Mobiles</h3>
+              <a href="#">SmartPhones</a>
+              <a href="#">Tablets</a>
+              <a href="#">Assesories</a>
+            </div>
+            <div class="column">
+              <h3>Camera</h3>
+              <a href="#">DSLR</a>
+              <a href="#">Camera Lenses</a>
+              <a href="#">Drone</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home_container">
+        <div>
+          <img src="Resources/home-icon.jpg" class="home-icon" />
+          <div class="home-icon-heading">Home</div>
+        </div>
+        <div class="dropdown-content">
+          <div class="header">
+            <h2>Home</h2>
+          </div>
+          <div class="row">
+            <div class="column">
+              <h3>Home Furnishing</h3>
+              <a href="#">Furniture</a>
+              <a href="#">Home Decor</a>
+              <a href="#">Lightings</a>
+            </div>
+            <div class="column">
+              <h3>Kitchen & Dinning</h3>
+              <a href="#">Cookware</a>
+              <a href="#">Kitchen Tools</a>
+              <a href="#">Disposable Supplies</a>
+            </div>
+            <div class="column">
+              <h3>Cleaning & Bath</h3>
+              <a href="#">Cleaning Supplies</a>
+              <a href="#">Household Supplies</a>
+              <a href="#">Bath & Kitchen Fittings</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="more_container">
+        <div>
+          <img src="Resources/more-icon.jpg" class="more-icon" />
+          <div class="more-icon-heading">More</div>
+        </div>
+        <div class="dropdown-content">
+          <div class="header">
+            <h2>Beauty, Toys & More</h2>
+          </div>
+          <div class="row">
+            <div class="column">
+              <h3>Beauty & Personal Care</h3>
+              <a href="#">Bath & oral Care</a>
+              <a href="#">Personal Hygiene</a>
+              <a href="#">Luxury</a>
+            </div>
+            <div class="column">
+              <h3>Sports & Fitness</h3>
+              <a href="#">Sports</a>
+              <a href="#">Fitness Equipments</a>
+              <a href="#">Yoga</a>
+            </div>
+            <div class="column">
+              <h3>Stationary & Office supplies</h3>
+              <a href="#">Pens & Gift Set</a>
+              <a href="#">Art Supplies</a>
+              <a href="#">Office Supplies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="slider_container">
+      <div class="slider">
+        <div class="slide">
+          <img src="Resources/slide1.PNG" alt="Photo 1" />
+        </div>
+        <div class="slide">
+          <img src="Resources/slide2.PNG" alt="Photo 2" />
+        </div>
+        <!-- <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
+        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div> -->
+        <button class="slider_btn slider_btn--left">&larr;</button>
+        <button class="slider_btn slider_btn--right">&rarr;</button>
+      </div>
+    </section>
+    <section class="info">
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
+        quas quisquam non? Quas voluptate nulla minima deleniti optio ullam
+        nesciunt, numquam corporis et asperiores laboriosam sunt, praesentium
+        suscipit blanditiis. Necessitatibus id alias reiciendis, perferendis
+        facere pariatur dolore veniam autem esse non voluptatem saepe provident
+        nihil molestiae.
+      </div>
+    </section>
+    <footer>
+      <div class="footer_container">
+        <div class="column-footer column-1">
+          <h2 class="footer_header">Estore</h2>
+          <p class="footer-text">
+            We are an independent local community and group.
+          </p>
+          <p class="footer-text-owner">Estore is owned by TusharKapoor.inc</p>
+        </div>
+        <div class="column-footer column-2">
+          <h2 class="small-footer-header">More Information</h2>
+          <p class="footer-text">
+            <a class="footer-link" href="#">About us</a>
+          </p>
+          <p class="footer-support-text">
+            <a class="footer-link" href="#">Policy</a>
+          </p>
+          <p class="footer-support-text">
+            <a class="footer-link" href="#">Help</a>
+          </p>
+        </div>
+        <div class="column-footer column-3">
+          <h2 class="small-footer-header">Connect with us</h2>
+          <p class="footer-text">
+            <a
+              class="footer-link"
+              href="https://www.linkedin.com/in/tushar-kapoor-6a0876124/"
+              >LinkeDin Page</a
+            >
+          </p>
+          <p class="footer-text">
+            <a class="footer-link" href="https://twitter.com/TusharK43747465"
+              >Twitter Page</a
+            >
+          </p>
+          <p class="footer-text">
+            <a class="footer-link" href="https://github.com/Kapoor-Tushar"
+              >GitHub</a
+            >
+          </p>
+        </div>
+        <div class="column-footer column-4">
+          <h2 class="small-footer-header">Image credits</h2>
+          <p class="footer-text">
+            <a
+              target="_blank"
+              href="https://icons8.com/icon/bOXN3AZhMCek/circled-user-male-skin-type-1-and-2"
+              >Circled User Male Skin Type 1 and 2</a
+            >
+            icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+            <a
+              target="_blank"
+              href="https://icons8.com/icon/hLYvKdVaN5mD/customer-service"
+              >customer-service</a
+            >
+            icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+            <a
+              href="https://www.freevector.com/hippie-fashion-style-vector--29357"
+              >FreeVector.com</a
+            >
+            <a href="https://www.freevector.com/home-electronics#"
+              >FreeVector.com</a
+            >
+            <a
+              href="https://www.freevector.com/free-home-furniture-vector-20283"
+              >FreeVector.com</a
+            >
+            <a
+              href="https://www.freepik.com/free-vector/baby-items-icon-set-with-toys-accessory-kids-cartoon-style_33906199.htm#query=kindergarten%20items&position=2&from_view=search&track=sph"
+              >Image by johnstocker</a
+            >
+            on Freepik
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
